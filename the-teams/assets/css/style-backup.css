@@ -1,0 +1,234 @@
+body {
+    background-color: #161C29;
+  }
+  
+  .blue-color {
+    color: #008CFF;
+  }
+  
+  .blue-btn {
+    margin-top: 3px;
+  
+    background-color: #008CFF;
+    box-shadow: 0px 0px 54px rgba(0, 140, 255, 0.28);
+    border-radius: 25.6759px;
+    color: #FAFCFD;
+    padding: 8px 35px;
+    font-size: 20px;
+  }
+  
+  .border-btn {
+    margin-top: 3px;
+    color: #FAFCFD;
+    border: 1px solid #FAFCFD;
+    border-radius: 25.6759px;
+    color: #FAFCFD;
+    padding: 8px 35px;
+    font-size: 20px;
+    -webkit-border-radius: 25.6759px;
+    -moz-border-radius: 25.6759px;
+    -ms-border-radius: 25.6759px;
+    -o-border-radius: 25.6759px;
+  }
+  
+  .blue-btn:hover {
+    color: #FAFCFD;
+  }
+  
+  .border-btn:hover {
+    color: #FAFCFD;
+  }
+  
+  .side-navbar {
+    width: 238px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #1C2230;
+    transition: 0.5s;
+  }
+  
+  .my-container {
+    transition: 0.4s;
+  }
+  
+  .active-nav {
+    margin-left: 0;
+  }
+  
+  /* for main section */
+  .active-cont {
+    margin-left: 238px;
+  }
+  
+  /* topbar styling start here */
+  
+  
+  
+  /* topbar styling end here */
+  
+  
+  /******************************************************************** sidebar styling start here ************************************************************ */
+  .nav-link {
+    padding-bottom: 30px;
+  }
+  
+  .nav-link a {
+    color: #FAFCFD;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24.51px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .side-icon-block a {
+    color: #B6BBC6;
+  }
+  
+  .side-icon-block {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #B6BBC6;
+    margin: 0px 3px;
+    font-size: 16px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  
+  .sb-text {
+    color: #60646E;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24.51px;
+    font-size: 10px;
+  }
+  
+  /************************************************************ * sidebar styling end here ************************************************************ */
+  
+  .hide-toggl-btn a {
+    background-color: #191E2B;
+    color: #B6BBC6;
+    font-size: 21px;
+  }
+  
+  .hide-toggl-btn a:hover {
+    color: #B6BBC6;
+  }
+  
+  /* ****************************************************** Home Page Section one start ****************************************************** */
+  
+  .h-sec1 h1 {
+    color: #FAFCFD;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 113%
+  }
+  
+  .h-sec1 p {
+    color: #FAFCFD;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: normal;
+  }
+  
+  .card-one-m {
+    background-image: url("../images/h-sec-bg.png");
+    background-size: contain;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  
+  .body-card {
+    background: radial-gradient(88.41% 88.41% at 52.1% 15.32%, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.06) 56.77%, rgba(143, 150, 176, 0.1) 100%);
+    box-shadow: 0px 0.576628px 5.76628px rgba(0, 0, 0, 0.306262);
+    border-radius: 4.32471px;
+  }
+  .body-card h3{
+    font-family: "Inter";
+    font-size: 14.4px;
+    color: #fff;
+  }
+  .body-card .xs-p{
+    font-family: "Roboto";
+    font-size: 10px;
+    color: #fff;
+  }
+  .body-card .s-p{
+    font-family: "Roboto";
+    font-size: 12px;
+    /* font-weight: 600; */
+    color: #fff;
+    line-height: 15px;
+  }
+  .body-card .ss-p {
+    font-family: "Roboto";
+    font-size: 10px;
+    font-weight: 300;
+    color: #FAFCFD;
+    line-height: 15px;
+  }
+  .body-card .ss-p a{
+    color: #FAFCFD;
+  }
+  .body-card .ss-p:hover{
+    color: #FAFCFD;
+  }
+  .price_label{
+    font-family: "Inter";
+    font-size: 20px;
+  }
+  .get-started-btn{
+    background: linear-gradient(131.62deg, #00D3CA -6.12%, #00A89A 82.96%);
+    box-shadow: 0px -2.59483px 64.5823px #2957EE;
+    border-radius: 2.88314px;
+    color: #fff;
+    font-family: "Inter";
+    font-size: 10px;
+  }
+  .plans p{
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 10px;
+    color: #fff;
+    line-height: 15px;
+  }
+  /* ****************************************************** Home Page Section one end ****************************************************** */
+  
+  @media (max-width:575px) {
+    .my-container {
+      margin-left: 0;
+    }
+  
+    .hide-toggl-btn {
+      display: none !important;
+    }
+  
+    .hide-topbar {
+      display: block !important;
+    }
+  
+    .hide-sidebar {
+      display: none !important;
+    }
+  }
+  
+  @media (min-width:576px) {
+  
+    /* .my-container{
+      margin-left: 0;
+    } */
+    .hide-topbar {
+      display: none !important;
+    }
+  
+    .hide-sidebar {
+      display: block !important;
+    }
+  }
