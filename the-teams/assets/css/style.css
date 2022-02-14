@@ -62,7 +62,6 @@ body {
 }
 
 /* navbar toggler styling start here */
-
 .navbar{
   /* background-color: #1C2230; */ 
 }
@@ -70,10 +69,11 @@ body {
   border: 0 !important;
   padding-bottom: 15px;
 }
+
 .nav-margin-top{
   margin-top: 100px !important;
-  
 }
+
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -93,6 +93,10 @@ body {
 }
 .middle-bar{
   margin: 5px auto;
+}
+.menu-wrap .menu-logo {
+  padding: 45px;
+
 }
 
 /* State when navbar is opened (START) */
@@ -139,8 +143,8 @@ body {
 .nav-link a {
   color: #FAFCFD;
   font-family: 'Open Sans', sans-serif;
-  line-height: 24.51px;
-  font-size: 18px;
+  line-height: 40.51px;
+  font-size: 22px;
   text-decoration: none;
 }
 

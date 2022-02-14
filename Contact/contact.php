@@ -1,26 +1,26 @@
 <?php
 
 
-    $firstname = $_POST['first_name'];
-    $lastname = $_POST['last_name'];
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
     $message = $_POST['message'];
-    $email = $_POST['mail'];
-    $phonenum = $_POST['phone'];
+    $budget = $_POST['budget'];
+    $email = $_POST['email'];
+    $number = $_POST['number'];
+
+    if (!empty($firstName) || !empty($lastName) || !empty($message) 
+    || !empty($email) || !empty($number)) {
+    $host = "localhost";
+    $dbUsername = "	u307258664_ariellemorris";
+    $dbPassword = "Naruto1#";
+    $dbName = "u307258664_database_one";
+    } else{
+        echo "All fields are required";
+        die();
+    }
+    
 
 
-        $email_from = 'UXPROS';
-        $email_subject = 'New message from potential client'
-        $email_body = 
-        "Name: $first_name. $last_name. \n". "Email: $mail. \n". "Message: $message. \n". "Phone Number: $phone. \n";
-
-
-    $email_to = "7.morrisarielle@gmail.com";
-    $headers = "From: $email_from \r\n";
-    $headers .="Reply-To: $email \r\n";
-
-    mail($email_to, $email_subject, $email_body, $headers)
-
-    header("location: contact-form-success.html");
   
 
 

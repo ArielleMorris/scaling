@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.body{
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets/duzy/Hero.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.body.landscape{
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+  background: #161C29;
+}
+
+
+.switchView{
+  position: absolute;
+  top : 5%;
+  right : 2%;
+  padding: 8px;
+  border : 1px solid white;
+}
+
+.switchView  a{
+  color : white;
+  text-decoration: none;
+}
+
+
+.navbar{
+  padding: 32px;
+}
+
+.navbar .fa-bars{
+  color : white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navigation__content{
+  width: 300px;
+  background: #1C2230;
+  padding: 32px;
+  filter: drop-shadow(2px 0px 24px rgba(14, 16, 20, 0.6));
+  position: absolute;
+  z-index: 105;
+  transition: 0.5s;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  top : 10vh;
+}
+
+
+.navigation__content.active{
+  height: 90vh;
+  padding: 32px;
+  transition: 0.5s;
+}
+
+.navigation__content .logo{
+  margin-bottom: 64px;
+}
+
+.navigation__content a{
+  color : white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navigation__content ul li{
+  list-style: none;
+  margin : 40px;
+  margin-left: 0;
+}
+
+.navigation__content li a{
+  font-size: 18px;
+}
+
+.navigation__content .footer{
+  position: absolute;
+  bottom: 5%;
+  width: 70%;
+}
+.navigation__content .icons{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.navigation__content .rights{
+    color :#60646E;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.navigation__content .rights p{
+  font-size: 10px;
+}
+
+.section__contaniner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+.section{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  justify-content: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+
+.landscape .section{
+  position: relative;
+  opacity: 1;
+  margin-bottom: 32px!important;
+}
+
+.section.active{
+  transition: 0.5s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.section *{
+  color : white;
+}
+
+.backHome a{
+  text-decoration: none;
+}
+
+
+.backHome .fa-solid{
+  font-size: 20px;
+}
+
+.backHome span{
+  margin-left: 16px;
+  font-size: 20px;
+}
+
+.section .left__section{
+  width: 70%;
+  margin : 0 auto;
+  padding-top: 20%;
+  position: relative;
+  z-index: 3;
+}
+
+.section.last .left__section{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0;
+}
+
+.section .left__section img{
+  width: 60%;
+}
+
+
+.section.reverse .left__section{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0;
+  padding-top: 10%;
+}
+
+.left__section .heading  h1{
+  font-size: 48px;
+  margin:  16px 0;
+  margin-top: 32px;
+}
+
+.left__section .content p{
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 16px;
+  font-weight: 200;
+}
+
+.section .right__section{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section.reverse .right__section img {
+    width: 100%;
+}
+
+.section__contaniner .right__section img{
+  width: 50%;
+}
+
+
+.hero__section.section{
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.hero__section img{
+  width: 78%;
+}
+
+
+.section.last{
+  justify-content: center;
+  align-items: center;
+}
+
+.section.last .left__section img{
+  width: 100%;
+}
+
+.section.last .right__section img{
+  width: 30%;
+  margin-top: -64px;
+}
+
+.getInTouch{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  display: block;
+  padding: 8px 64px;
+  border-radius: 22px;
+  background: #008CFF;
+  z-index: 101;
+  transition: 0.5s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.getInTouch a{
+  color : white;
+  text-decoration: none;
+}
+
+
+.getInTouch.hidden{
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.landscape .getInTouch{
+  position: relative;
+  margin: auto;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 16px;
+}
+
+.landscape .section__contaniner{
+  height: auto;
+}
+
+
+.lowerhalf{
+  background: linear-gradient(180.76deg, rgba(27, 30, 37, 0.05) 46.16%, rgba(26, 26, 33, 0.42) 73.94%);
+  width: 100%;
+  margin: auto;
+  margin-top: 64px;
+  position: relative;
+  color : white;
+}
+
+
+
+.lowerhalf .projects{
+  width: 40%;
+  margin: auto;
+}
+
+
+
+.lowerhalf img{
+  width: 100%;
+}
+
+.lowerhalf .heading h1{
+  color : white;
+  font-weight: 600;
+  margin-bottom: 64px;
+  font-size: 56px;
+}
+
+.lowerhalf .content p{
+  font-weight: 300;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.speakTo{
+    margin-bottom: -25%;
+}
+
+.speakTo a{
+  display: inline-block;
+  padding: 13px 40px;
+  border-radius: 22px;
+  color : white;
+  text-decoration: none;
+  background: #008CFF;
+  box-shadow: 0px 0px 54px rgba(0, 140, 255, 0.28);
+  border-radius: 25px;
+  margin-top: 32px;
+  font-weight: 600;
+}
+
+
+
+.card{
+  background: url("../assets/allume/cardBackground.png");
+  background-size: cover;
+  border-radius: 24px;
+  padding: 32px;
+  width: 50%;
+  margin: auto;
+  margin-top: 64px;
+  position: relative;
+  filter: drop-shadow(31.2528px 31.2528px 35.7175px rgba(0, 0, 0, 0.3));
+}
+
+.card .heading{
+  text-align: right;
+}
+
+.card .image{
+  text-align: center;
+}
+
+
+.card .image img{
+  width: 60%;
+}
+
+
+.card__footer {
+  text-align: right;
+}
+
+.card__footer img{
+  width: 15%;
+}
+
+.card__footer ul{
+  color : white;
+  font-weight: 600;
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.card__footer li{
+  margin-right: 16px;
+  font-size: 12px;
+}
+
+.card .descp{
+  transform: rotate(90deg);
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: -32px;
+  transform: rotate(90deg) translateX(-50%);
+  font-size: 24px;
+}
+
+
+.card .descp h3{
+  font-weight: 400;
+}
+
+
+.clients {
+  width: 50%;
+  margin : auto;
+  margin-top: 64px;
+}
+
+.clients .heading h1{
+  font-weight: 600;
+  margin-bottom: 64px;
+  font-size: 56px;
+}
+
+
+.clients .ribbon img{
+  width: 100%;
+}
+
+
+
+.companies{
+  display: grid;
+  grid-template-columns: repeat(4 , minmax(0,1fr));
+  grid-gap: 32px;
+  width: 75%;
+  margin : auto;
+  padding-bottom: 32px;
+}
+
+.company{
+  padding: 32px;
+  border-radius: 28px;
+  background: url("../assets/allume/cardBackground.png");
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(43.5738px 43.5738px 49.7987px rgba(0, 0, 0, 0.3));
+}
+
+.company img{
+  width: 50%;
+}
+
+
+
+@media (max-width: 1200px) {
+  .card__footer ul{
+    width: 85%;
+  }
+
+  .card .descp{
+    font-size: 20px;
+    margin-left: -64px;
+    transform: rotate(90deg) translateX(-50%);
+  }
+
+  .company img{
+    width: 75%;
+  }
+
+}
+
+@media (max-width :1023px) {
+  .lowerhalf .projects{
+    width: 70%;
+  }
+  .companies{
+    grid-template-columns: repeat(3 , minmax(0,1fr));
+  }
+
+  .speakTo {
+    margin-bottom: -10%;
+  }
+
+  .card{
+    width: 70%;
+  }
+
+  .card .heading{
+    font-size: 28px;
+  }
+
+  .clients {
+    width: 75%;
+  }
+
+}
+
+
+@media (max-width : 767px) {
+    .section{
+      grid-template-columns: minmax(0,1fr);
+    }
+
+    .hero__section img{
+      width: 90%;
+      margin-bottom: 64px;
+    }
+
+    .landscape .getInTouch{
+      width: 80%;
+    }
+
+    .landscape .projects , .card , .clients{
+      width: 95%;
+    }
+    .card__footer ul{
+      width: 85%;
+      list-style: none;
+    }
+
+    .card__footer li{
+      font-size: 9px;
+    }
+
+    .companies{
+      grid-template-columns: repeat(2 , minmax(0,1fr));
+      grid-gap: 8px;
+      width :  85%;
+    }
+
+
+
+    .companies .company{
+      height: 150px;
+    }
+
+    .company img{
+      width: 100%;
+    }
+
+    .section.last .right__section img{
+      width: 30%;
+      margin-top: 32px;
+    }
+}
