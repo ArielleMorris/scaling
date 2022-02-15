@@ -19,63 +19,105 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- Header Start --> 
-        <a href="#" class="close-navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        </a>
-        <header>
-            <div class="container-fluid position-fixed">
-                <nav class="navbar navbar-expand-xxl">
-                    <a class="navbar-brand" href="#"><img src="images/uxpro-logo.svg" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
-                            <span class="click-menu-btn">
-                                <span class="bar1"></span>
-                                <span class="bar2"></span>
-                                <span class="bar3"></span>
-                            </span>
-                        </span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="menu-wrap">
-                            <div class="menu-top">
-                                <a class="menu-logo" href="#">
-                                    <img src="images/uxpro-logo.svg" alt="">
-                                </a>
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="/works/works.html">View our work</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/the-teams/index.html">Meet the Pros</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/Contact/contact-form6.html">Speak to a UX pro</a>
-                                    </li>
-                                    <!-- 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Join the team</a>
-                                    </li> -->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Learn like a Pro (Coming Soon)</a>
-                                    </li>
-                                </ul>
+    <section class="hide-topbar mt-4">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <a href="#" class="nav-link">
+                    <img src="images/uxpro-logo.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav p-4">
+                        <li class="nav-link">
+                            <a href="/works/works.html"><span>View Our Work</span></a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="/the-teams/index.html"><span>Meet The Pros</span></a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="/Contact/contact-form6.html"><span>Speak to UX Pro</span></a>
+                        </li>
+                        <!-- 
+                        <li class="nav-link">
+                            <a href="#"><span>Join the team</span></a>
+                        </li> -->
+                        <li class="nav-link">
+                            <a href="#"><span>Learn Like a Pro <br>(Coming Soon)</span></a>
+                        </li>
+                    </ul>
+                    <div class="nav-link h4 w-100 mb-3 text-center mt-5 nav-margin-top">
+                        <div class="d-flex justify-content-center mb-3">
+                            <div class="side-icon-block d-flex align-items-center justify-content-center">
+                                <a href="#"> <i class="fa fa-google icon" aria-hidden="true"></i></a>
                             </div>
-                            <div class="menu-btm">
-                                <ul class="social-link-wrap">
-                                    <li><a href="#"><img src="images/google-icon.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="images/facebook-icon.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="images/linkedin-icon.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="images/instagram-icon.svg" alt=""></a></li>
-                                </ul>
-                                <p><a href="#">UXPros, LLC</a> &reg; All Rights Reserved</p>
+                            <div class="side-icon-block d-flex align-items-center justify-content-center">
+                                <a href="#"> <i class="fa fa-facebook-f icon"></i></a>
+                            </div>
+                            <div class="side-icon-block d-flex align-items-center justify-content-center">
+                                <a href="#"> <i class="fa fa-linkedin icon" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="side-icon-block d-flex align-items-center justify-content-center">
+                                <a href="#"> <i class="fa fa-instagram icon" aria-hidden="true"></i></a>
                             </div>
                         </div>
+                        <p class="sb-text">UXPros, LLC ® All Rights Reserved</p>
                     </div>
-                  </nav>
+                </div>
             </div>
-        </header>
-         
+        </nav>
+    </section>
+    <div class="side-navbar d-flex justify-content-between flex-wrap flex-column hide-sidebar" id="sidebar">
+        <div class="menu-wrap">
+            <a href="#" class="nav-link h3 text-white ">
+                <img class="menu-logo" src="images/uxpro-logo.svg" alt="logo">
+            </a>
+            <ul class="nav flex-column text-white w-100 text-center">
+            <li class="nav-link">
+                <a href="/works/works.html"><span>View Our Work</span></a>
+            </li>
+            <li class="nav-link">
+                <a href="/the-teams/index.html"><span>Meet The Pros</span></a>
+            </li>
+            <li class="nav-link">
+                <a href="/Contact/contact-form6.html"><span>Speak to UX Pro</span></a>
+            </li>
+            <!-- 
+            <li class="nav-link">
+                <a href="#"><span>Join the team</span></a>
+            </li> -->
+            <li class="nav-link">
+                <a href="#"><span>Learn Like a Pro <br>(Coming Soon)</span></a>
+            </li>
+        </ul>
+    </div>
+        <div class="nav-link h4 w-100 mb-3 text-center nav-margin-top">
+            <div class="d-flex justify-content-center mb-3">
+                <div class="side-icon-block d-flex align-items-center justify-content-center">
+                    <a href="#"> <i class="fa fa-google icon" aria-hidden="true"></i></a>
+                </div>
+                <div class="side-icon-block d-flex align-items-center justify-content-center">
+                    <a href="#"> <i class="fa fa-facebook-f icon"></i></a>
+                </div>
+                <div class="side-icon-block d-flex align-items-center justify-content-center">
+                    <a href="#"> <i class="fa fa-linkedin icon" aria-hidden="true"></i></a>
+                </div>
+                <div class="side-icon-block d-flex align-items-center justify-content-center">
+                    <a href="#"> <i class="fa fa-instagram icon" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <p class="sb-text">UXPros, LLC ® All Rights Reserved</p>
+        </div>
+    </div>
+    <div class="wrapper p-1 my-container">
+        <nav class="top-navbar hide-toggl-btn">
+            <a class="btn border-0 m-md-5" id="menu-btn"><i class="fa fa-bars"></i></a>
+        </nav>
         <!-- Header Start -->
         <!-- Banner Start -->
         <div class="banner">

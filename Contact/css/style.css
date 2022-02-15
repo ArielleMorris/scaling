@@ -3867,3 +3867,251 @@ header .navbar-collapse .menu-wrap {
 	}
 	/*-_-_Works_CSS_End_-_-*/
 }
+
+/* Edited By mohammudullah Fiverr */
+
+body {
+	background-color: #161C29;
+  }
+  
+  .blue-color {
+	color: #008CFF;
+  }
+  
+  .blue-btn {
+	margin-top: 3px;
+	background-color: #008CFF;
+	box-shadow: 0px 0px 54px rgba(0, 140, 255, 0.28);
+	border-radius: 25.6759px;
+	color: #FAFCFD;
+	padding: 8px 35px;
+	font-size: 20px;
+  }
+  
+  .border-btn {
+	margin-top: 3px;
+	color: #FAFCFD;
+	border: 1px solid #FAFCFD;
+	border-radius: 25.6759px;
+	color: #FAFCFD;
+	padding: 8px 35px;
+	font-size: 20px;
+	-webkit-border-radius: 25.6759px;
+	-moz-border-radius: 25.6759px;
+	-ms-border-radius: 25.6759px;
+	-o-border-radius: 25.6759px;
+  }
+  
+  .blue-btn:hover {
+	color: #FAFCFD;
+  }
+  
+  .border-btn:hover {
+	color: #FAFCFD;
+  }
+  
+  .side-navbar {
+	width: 238px;
+	height: 100%;
+	position: fixed;
+	margin-left: -300px;
+	background-color: #1C2230; 
+	transition: 0.5s;
+  }
+  
+  .my-container {
+	transition: 0.4s;
+  }
+  
+  .active-nav {
+	margin-left: 0;
+  
+  }
+  
+  /* for main section */
+  .active-cont {
+	margin-left: 238px;
+  }
+
+/* navbar toggler styling start here */
+.navbar{
+	/* background-color: #1C2230; */ 
+  }
+  .navbar-toggler {
+	border: 0 !important;
+	padding-bottom: 15px;
+  }
+  
+  .nav-margin-top{
+	margin-top: 100px !important;
+  }
+  
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	border: 0 !important;
+  }
+  
+  /* Lines of the Toggler */
+  .toggler-icon{
+	width: 30px;
+	height: 3px;
+	background-color: #FAFCFD;
+	display: block;
+	transition: all 0.2s;
+  }
+  .middle-bar{
+	margin: 5px auto;
+  }
+  .menu-wrap .menu-logo {
+	padding: 45px;
+  
+  }
+  
+  /* State when navbar is opened (START) */
+  .navbar-toggler .top-bar {
+	transform: rotate(45deg);
+	transform-origin: 10% 10%;
+  }
+  
+  .navbar-toggler .middle-bar {
+	opacity: 0;
+	filter: alpha(opacity=0);
+  }
+  
+  .navbar-toggler .bottom-bar {
+	transform: rotate(-45deg);
+	transform-origin: 10% 90%;
+  }
+  
+  .navbar-toggler.collapsed .top-bar {
+	transform: rotate(0);
+  }
+  
+  .navbar-toggler.collapsed .middle-bar {
+	opacity: 1;
+	filter: alpha(opacity=100);
+  }
+  
+  .navbar-toggler.collapsed .bottom-bar {
+	transform: rotate(0);
+  }
+  .navbar-toggler.collapsed .toggler-icon {
+	background-color: #FAFCFD;
+  }
+
+  .nav-link {
+	padding-bottom: 30px;
+  }
+  
+  .nav-link a {
+	color: #FAFCFD;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 40.51px;
+	font-size: 22px;
+	text-decoration: none;
+  }
+  
+  .side-icon-block a {
+	color: #B6BBC6;
+  }
+  
+  .side-icon-block {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #B6BBC6;
+	margin: 0px 3px;
+	font-size: 16px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+  }
+  
+  .sb-text {
+	color: #60646E;
+	font-family: 'Visby CF', sans-serif;
+	font-weight: 300;
+	line-height: 24.51px;
+	font-size: 10px;
+  }
+  
+  /************************************************************ * sidebar styling end here ************************************************************ */
+  
+  .hide-toggl-btn a {
+	background-color: #191E2B;  
+	color: #B6BBC6;
+	font-size: 21px;
+	padding:  10px 15px 10px 15px;
+	position: fixed;
+	z-index: 99;
+	border-radius: 5px;
+  }
+  
+  .hide-toggl-btn a:hover {
+	color: #B6BBC6;
+  }
+
+  @media (max-width:575px) {
+	.my-container {
+	  margin-left: 0;
+	}
+  
+	.hide-toggl-btn {
+	  display: none !important;
+	}
+  
+	.hide-topbar {
+	  display: block !important;
+	}
+  
+	.hide-sidebar {
+	  display: none !important;
+	}
+  }
+  
+  @media (min-width:576px) {
+  
+	/* .my-container{
+	  margin-left: 0;
+	} */
+	.hide-topbar {
+	  display: none !important;
+	}
+  
+	.hide-sidebar {
+	  display: block !important;
+	}
+  }
+
+  @media(max-width:768px){
+	.top-line-div{
+	  position: relative;
+	  padding-top: 50px;
+	  height: 200px;
+	}
+	.top-line-div img{
+	  position: absolute;
+	  top: 0px;
+	  left: 0;
+	  z-index: -1;
+	  width: 80%;
+	}
+	.h-sec2 .black-sec img {
+	  max-width: 250px;
+  }
+  .bold-h1{
+	font-size: 45px;
+  }
+  .h-sec2 .black-sec .video-play {
+	top: 45%;
+	right: 40%;
+  }
+  }
+  
+  
+  /* navbar toggler styling end here */

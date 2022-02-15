@@ -1,8 +1,11 @@
 $(document).ready(function(){
-    $(".navbar-toggler").click(function () {
-        $(".wrapper").toggleClass("move-to-right");
-        $("body").toggleClass("fixed");
-        $(".click-menu-btn").toggleClass("change-btn");
+    
+    var menu_btn = document.querySelector("#menu-btn");
+    var sidebar = document.querySelector("#sidebar");
+    var container = document.querySelector(".my-container");
+    menu_btn.addEventListener("click", () => {
+      sidebar.classList.toggle("active-nav");
+      container.classList.toggle("active-cont");
     });
     
     $(".close-navbar-toggler").click(function () {
@@ -71,3 +74,5 @@ $fileInput.on('change', function() {
     $textContainer.text(filesCount + ' Select files');
   }
 });
+
+
