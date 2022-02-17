@@ -62,6 +62,7 @@ input[type=number] {
 }
 
 /*-_-_Header_CSS_Start_-_-*/
+
 .wrapper {
 	background: #161C29;
 	/* overflow: hidden; */
@@ -255,7 +256,7 @@ header .navbar-collapse .menu-wrap {
 
 .banner::before {
 	content: "";
-	background: radial-gradient(70.56% 102.21% at 0% 77.71%, rgba(26, 39, 69, 0.7) 0%, rgba(37, 42, 52, 0) 100%);
+	/* background: radial-gradient(70.56% 102.21% at 0% 77.71%, rgba(26, 39, 69, 0.7) 0%, rgba(37, 42, 52, 0) 100%); */
 	backdrop-filter: blur(254px);
 	left: 0;
 	top: 0;
@@ -1816,8 +1817,6 @@ header .navbar-collapse .menu-wrap {
 	}
 	/*-_-_Works_CSS_End_-_-*/
 }
-
-/* Edited By mohammudullah Fiverr */
 
 body {
 	background-color: #161C29;
