@@ -79,3 +79,24 @@ $fileInput.on('change', function() {
     $textContainer.text(filesCount + ' Select files');
   }
 });
+
+
+$(".contact-form-inner").on("submit",function (e) {
+  e.preventDefault();
+  var formData = new FormData(this);
+  $.ajax({
+    url: "contact.php",
+    type: "POST",
+    data:formData,
+    cache:false,
+                contentType: false,
+                processData: false,
+    success: function (data) {
+      console.log(data);
+      if($.trim(data) == 'done'){
+        window.location.href = 'contact-form-success.html';        
+      }
+
+    }
+  });
+})

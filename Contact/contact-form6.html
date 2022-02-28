@@ -147,29 +147,29 @@
                                 </div>
                               </div>
                             </div>
-                            <form name="contact" action= "contact.php" method="POST" class="contact-form-inner">
+                            <form name="contact" action= "#" method="POST" class="contact-form-inner">
                                 <h4>Get in Touch</h4>
                                 <div class="row">
                                     <div class="form-group col-md-6 mb-4">
                                         <label class="mt-2">First Name</label>
-                                        <input id="name" name="firstName" type="text" class="form-control" placeholder="Enter first name">
+                                        <input id="name" name="firstName" type="text" class="form-control" placeholder="Enter first name" required="true">
                                     </div>
                                     <div class="form-group col-md-6 mb-4">
                                         <label class="mt-2">Last Name</label>
-                                        <input id="name2" name="lastName" type="text" class="form-control" placeholder="Enter last name">
+                                        <input id="name2" name="lastName" type="text" class="form-control" placeholder="Enter last name" required="true">
                                     </div>
                                     <div class="form-group col-md-6 mb-4">
                                         <label class="mt-2">Email</label>
-                                        <input id="email" name="email" type="email" class="form-control" placeholder="Email">
+                                        <input id="email" name="email" type="email" class="form-control" placeholder="Email" required="true">
                                     </div>
                                     <div class="form-group col-md-6 mb-4">
                                         <label class="mt-2">Mobile Number</label>
-                                        <input id="number" name="number" type="number" class="form-control" placeholder="mobile number">
+                                        <input id="number" name="number" type="number" class="form-control" placeholder="mobile number" required="true">
                                     </div>
                                     <div class="form-group col-md-6 mb-5">
                                         <label class="mt-2">Budget range</label>
                                         <label class="select-wrap">
-                                            <select name="budget" id="budget">
+                                            <select name="budget" id="budget" required="true">
                                                 <option value="0-$20,000">$0 - $20,000</option>
                                                 <option value="20K-$50,000">$20k - $50,000</option>
                                                 <option value="$50K-$100,000">$50k - $100,000</option>
@@ -207,7 +207,7 @@
                                     </div>
                                     <div class="form-group col-12 mb-4">
                                         <label class="mt-2">Project Description</label>
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Enter a brief description of your project"></textarea>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Enter a brief description of your project" required="true"></textarea>
                                     </div>
                                     
                                     <div class="form-group col-12 mb-4">
@@ -216,11 +216,12 @@
                                             <span class="fake-btn">Drop files here or</span>
                                             <span class="file-msg">--</span>
                                             <span class="select-file">Select files</span>
-                                            <input class="file-input" type="file" multiple>
+                                            <input class="file-input" type="file" name="file_upload" multiple>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="contact-form-success.html" class="general-btn">Submit</a>
+                                <input type="submit" name="submit" value="Submit" class="general-btn">
+                                <!-- <a href="contact-form-success.html" class="general-btn">Submit</a> -->
                                 <!-- <button class="general-btn" type="submit" name="submit">Submit</button> -->
                             </form>
                     </div>
