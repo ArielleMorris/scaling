@@ -42,14 +42,13 @@
     <br>
     Last Name: '.$lastName.'
     <br>
+    Description: '.$message.'
+    <br>
     Email: '.$email.'
     <br>
     Phone Number: '.$number.'
     <br>
     Budget: '.$budget.'
-    <br>
-    Description: '.$message.'
-    <br>
     ';
 
       
