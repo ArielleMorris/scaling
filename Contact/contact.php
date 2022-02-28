@@ -47,6 +47,9 @@
     Phone Number: '.$number.'
     <br>
     Budget: '.$budget.'
+    <br>
+    Description: '.$message.'
+    <br>
     ';
 
       
