@@ -1,7 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
-	font-family: 'Visby CF Bold', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 html { scroll-behavior: smooth;  }
 body,
@@ -12,7 +12,7 @@ input {
 	line-height: 1.3;
 	font-weight: 400;
 	color: #fff;
-	font-family: 'Visby CF Bold', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 a:hover {
@@ -21,8 +21,8 @@ a:hover {
 h1,h2,h3,h4,h5,h6 {
 	padding: 0;
 	margin: 0;
-	font-weight: 400;
-	font-family: 'Visby CF', sans-serif;
+	/* font-weight: 600; */
+	font-family: 'Visby CF Heavy', sans-serif;
 }
 p {
 	margin: 0;
@@ -61,6 +61,23 @@ input[type=number] {
 	url("../fonts/79927a8d010a79419f5c30e4d87409d5.woff") format("woff"), 
 	url("../fonts/79927a8d010a79419f5c30e4d87409d5.ttf") format("truetype"); 
 }
+
+@font-face {font-family: "Visby CF Heavy"; 
+	src: url("//db.onlinewebfonts.com/t/8af4648faad736e5dafed2c6c9775bb3.eot"); 
+	src: url("//db.onlinewebfonts.com/t/8af4648faad736e5dafed2c6c9775bb3.eot?#iefix") format("embedded-opentype"), 
+	url("//db.onlinewebfonts.com/t/8af4648faad736e5dafed2c6c9775bb3.woff2") format("woff2"), 
+	url("//db.onlinewebfonts.com/t/8af4648faad736e5dafed2c6c9775bb3.woff") format("woff"), 
+	url("//db.onlinewebfonts.com/t/8af4648faad736e5dafed2c6c9775bb3.ttf") format("truetype"), 
+	url("//db.onlinewebfonts.com/t/8af4648faad736e5dafed2c6c9775bb3.svg#Visby CF Heavy") format("svg"); 
+}
+
+@font-face {font-family: "Visby CF Bold"; 
+	src: url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.eot"); 
+	src: url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.eot?#iefix") format("embedded-opentype"), 
+	url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.woff2") format("woff2"), 
+	url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.woff") format("woff"), 
+	url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.ttf") format("truetype"), 
+	url("//db.onlinewebfonts.com/t/cfdc7772d1426068d6cc35816bdb06f8.svg#Visby CF Bold") format("svg"); }
 
 /*-_-_Header_CSS_Start_-_-*/
 .wrapper {
