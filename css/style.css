@@ -326,7 +326,6 @@ header .navbar-collapse .menu-wrap {
 }
 
 .banner .banner-content h1 {
-	font-weight: bold;
 	font-size: 70px;
 	line-height: 1.13;
 	letter-spacing: -0.46842px;
@@ -417,6 +416,22 @@ header .navbar-collapse .menu-wrap {
 	align-items: flex-start;
 	width: 946px;
 	width: 100%;
+	
+}
+
+.banner .banner-img .banner-img-top img:hover {
+/*box-shadow:
+1px 1px #373737,
+2px 2px #373737,
+3px 3px #373737,
+4px 4px #373737,
+5px 5px #373737,
+6px 6px #373737;*/
+border-radius: 20px;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+transition: .5s ease;
+	
 	
 }
 
@@ -1495,7 +1510,7 @@ header .navbar-collapse .menu-wrap {
 
 .contact-form-inner-wrap .back-btn {
 	max-width: 21px;
-	margin-bottom: 56.27px;
+	margin-bottom: 5px;
 }
 
 .contact-form-inner-wrap .back-btn img {
@@ -2279,7 +2294,7 @@ header .navbar-collapse .menu-wrap {
 	}
 
 	.contact-form-inner-wrap .back-btn {
-		margin-bottom: 44px;
+		margin-bottom: 20px;
 	}
 
 	.contact-form-inner-wrap h4 {

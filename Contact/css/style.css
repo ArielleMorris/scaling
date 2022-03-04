@@ -78,17 +78,7 @@ input[type=number] {
 	margin-left: 238px;	
 }
 
-header {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	top: 0;
-	z-index: 50;
-}
 
-header .navbar-brand {
-	display: none;
-}
 
 .click-menu-btn .bar1,
 .click-menu-btn .bar2,
@@ -106,68 +96,7 @@ header .navbar-brand {
 	margin-bottom: 0;
 }
 
-.navbar-toggler:hover .navbar-toggler-icon .click-menu-btn span {
-    /* background-color: #64b260; */
-    transition: 0.6s;
-}
 
-header .navbar-toggler-icon {
-    background-image: none;
-	width: 40px;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: rgba(31, 28, 21, 0.61);
-	backdrop-filter: blur(86px);
-	border-radius: 2px;
-}
-
-header .navbar-toggler {
-    padding: 0;
-	outline: unset !important;
-}
-
-header .navbar {
-    margin: 0 auto;
-    padding: 38px 25px;
-	position: static;
-	z-index: 2;
-}
-
-header .navbar-collapse {
-	position: fixed;
-	top: 0;
-	left: -238px;
-	padding: 0;
-	background: #1C2230;
-	width: 238px;
-	z-index: 1;
-	opacity: 1 !important;
-	display: block !important;
-	height: auto;
-	box-shadow: 2px 0 24px 0 rgba(14, 16, 20, 0.6);
-}
-
-header .navbar-collapse.collapsing {
-	height: 100vh;
-	left: -238px !important;
-	transition: height 0s ease;
-}
-
-header .navbar-collapse.show {
-	height: 100%;
-	left: 0;
-	transition: all 0.6s ease;
-}
-
-.navbar-toggler.collapsed ~ .navbar-collapse {
-	transition: all 0.6s ease;
-}
-
-header .navbar-collapse.show {
-	left: 0;
-}
 
 .close-navbar-toggler {
 	position: fixed;
@@ -183,13 +112,6 @@ header .navbar-collapse.show {
 	z-index: -1;
 }
 
-header .navbar-collapse .menu-wrap {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 38px 40px 47px;
-}
 
 .menu-wrap .menu-top .menu-logo {
 	padding-bottom: 59px;
@@ -245,15 +167,9 @@ header .navbar-collapse .menu-wrap {
 	line-height: 1.4;
 	color: #60646E;
 }
-/*-_-_Header_CSS_End_-_-*/
 
-/*-_-_Banner_CSS_Start_-_-*/
 
-/*-_-_Banner_CSS_End_-_-*/
 
-/*-_-_Content_CSS_Start_-_-*/
-
-/*-_-_Works_CSS_End_-_-*/
 
 /*-_-_Contact-form_CSS_Start_-_-*/
 .contact-form-wrap {
@@ -372,13 +288,8 @@ header .navbar-collapse .menu-wrap {
 }
 /*-_-_Contact-form_CSS_End_-_-*/
 
-/*-_-_Contact-form1_CSS_Start_-_-*/
+/*-_-_Contact-form6_CSS_Start_-_-*/
 
-
-
-.contact-form-wrap .contact-form-content.contact-form1 {
-	align-items: flex-start;
-}
 
 
 .contact-form-content .contact-form-inner-wrap {
@@ -389,9 +300,15 @@ header .navbar-collapse .menu-wrap {
 	transition: 0.6s all ease;
 }
 
-.contact-form-inner-wrap .back-btn {
+
+.contact-form-inner-wrap .back-btn-6 {
 	max-width: 21px;
-	margin-bottom: 56.27px;
+	margin-bottom: 20px;
+}
+
+.contact-form-inner-wrap .back-btn-5 {
+	max-width: 21px;
+	margin-bottom: -8px;
 }
 
 .contact-form-inner-wrap .back-btn img {
@@ -469,7 +386,8 @@ header .navbar-collapse .menu-wrap {
 .contact-form-inner textarea:focus,
 .contact-form-inner textarea:hover {
 	border-color: #008CFF;
-	filter: drop-shadow(0px 0px 10px #008CFF);
+	/**filter: drop-shadow(0px 0px 10px #008CFF);**/
+	color: white;
 }
 
 .contact-form-inner input::placeholder,
@@ -486,6 +404,8 @@ header .navbar-collapse .menu-wrap {
 	padding-left: 77px;
 }
 
+
+/*SUBMIT BUTTON */
 .contact-form-content .contact-form-inner .general-btn {
 	position: absolute;
 	z-index: 1;
@@ -502,9 +422,7 @@ header .navbar-collapse .menu-wrap {
 	background: #008CFF;
 	font-family: 'Visby CF', sans-serif;
 }
-/*-_-_Contact-form1_CSS_End_-_-*/
 
-/*-_-_Contact-form2_CSS_Start_-_-*/
 .checkbox-menu-dropdown button {
 	height: 62px;
 	padding: 0 16px;
@@ -618,7 +536,7 @@ header .navbar-collapse .menu-wrap {
 	opacity: 0;
 	z-index: 2;
 }
-/*-_-_Contact-form2_CSS_End_-_-*/
+
 
 /*-_-_Contact-form5_CSS_Start_-_-*/
 
@@ -628,6 +546,8 @@ header .navbar-collapse .menu-wrap {
 	position: relative;
 }
 
+
+/*Drop Down Selection*/
 .contact-form-inner label.select-wrap select {
 	height: 62px;
     padding: 0 16px;
@@ -892,14 +812,7 @@ header .navbar-collapse .menu-wrap {
 		margin-bottom: 38px;
 	}
 
-	.contact-form-content .get-started-wrap h2::before {
-		width: 480px;
-	}
 
-	.contact-form-content .get-started-wrap p {
-		font-size: 22px;
-		margin-bottom: 40px;
-	}
 
 	.contact-form-wrap .contact-form-content .success-img {
 		width: 280px;
@@ -987,29 +900,7 @@ header .navbar-collapse .menu-wrap {
 		margin-left: 0;
 	}
 
-	header .navbar-brand {
-		display: inline-block;
-		z-index: 5;
-	}
-
-	header .navbar-toggler {
-		z-index: 5;
-	}
-
-	header .close-navbar-toggler {
-		display: none;
-	}
-
-	header .navbar-collapse {
-		position: fixed; 
-		width: 100%;
-		left: -100%; 
-	}
-
-	header .navbar-collapse.collapsing {
-		left: -100% !important;
-	}
-
+	 
 	.click-menu-btn {
 		transition: 0.6s;
 	}
@@ -1056,20 +947,7 @@ header .navbar-collapse .menu-wrap {
 		justify-content: center;
 	}
 
-	header .navbar-collapse .menu-wrap {
-		background: #161C29;
-		position: relative;
-	}
 
-	header .navbar-collapse .menu-wrap:before {
-		content: "";
-		left: 20px;
-		bottom: 0;
-		width: calc(100% - 40px);
-		height: calc(100% - 47px);
-		background: #1C2230;
-		position: absolute;
-	}
 
 	header .navbar-collapse .menu-wrap .menu-top,
 	header .navbar-collapse .menu-wrap .menu-btm {
@@ -1077,9 +955,7 @@ header .navbar-collapse .menu-wrap {
 		z-index: 1;
 	}
 
-	header .navbar-toggler-icon {
-		background: transparent;
-	}
+
 
 	/*-_-_Works_CSS_End_-_-*/
 
@@ -1088,9 +964,6 @@ header .navbar-collapse .menu-wrap {
 		padding: 0 0 54px;
 	}
 	
-	.contact-form-content .get-started-wrap {
-		padding: 80px 30px;
-	}
 
 	.contact-form-wrap .contact-form-content {
 		min-height: calc(100vh - 220px);
@@ -1102,27 +975,10 @@ header .navbar-collapse .menu-wrap {
 		height: 120px;
 	}
 
-	.contact-form-content .get-started-wrap h2 {
-		font-size: 53px;
-		margin-bottom: 32px;
-	}
-
-	.contact-form-content .get-started-wrap h2::before {
-		width: 400px;
-	}
-
-	.contact-form-content .get-started-wrap p {
-		font-size: 20px;
-		margin-bottom: 34px;
-	}
-
 	.contact-form-wrap .contact-form-content .success-img {
 		width: 220px;
 	}
 
-	.contact-form-wrap .contact-form-content .uxpro-img {
-		display: none;
-	}
 	/*-_-_Contact-form_CSS_End_-_-*/
 
 	/*-_-_Contact-form1_CSS_Start_-_-*/ 
@@ -1212,13 +1068,6 @@ header .navbar-collapse .menu-wrap {
 		margin-bottom: 22px;
 	}
 
-	header .navbar-collapse .menu-wrap {
-		height: 100vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		padding: 168px 34px 52px;
-	}
 
 
 	
@@ -1227,10 +1076,6 @@ header .navbar-collapse .menu-wrap {
 
 	/*-_-_Contact-form_CSS_Start_-_-*/
 	
-	header.hidden-mobile .navbar {
-		padding-top: 30px;
-		padding-bottom: 30px;
-	}
 
 	.contact-form-wrap {
 		padding: 0 0 34px;
@@ -1240,62 +1085,14 @@ header .navbar-collapse .menu-wrap {
 		display: none;
 	}
 	
-	.contact-form-content .get-started-wrap {
-		padding: 180px 10px;
-		max-width: 520px;
-		position: relative;    
-		min-height: calc(100vh - 136px);
-	}
-		
-	.contact-form-content .get-started-wrap::after {
-		content: "";
-		background: url(../images/form-ring.png) bottom right no-repeat;
-		background-size: contain;
-		width: 400px;
-		height: 161px;
-		right: auto;
-		left: 50%;
-		transform: translateX(-50%);
-		bottom: 71px;
-		position: absolute;
-		z-index: 0;
-	}
 	
-
 	.contact-form-wrap .contact-form-content {
 		min-height: calc(100vh - 136px);
 		width: calc(100% - 10px);
 		align-items: flex-start;
 		overflow: hidden;
 	}
-/*
-	.contact-form-wrap .contact-form-content:after {
-		background: url(../images/contact-mb.png) top right no-repeat;
-		background-size: contain;
-		width: 209px;
-		height: 99px;
-		top: 0;
-		right: 0;
-		left: auto;
-		bottom: auto;
-	}
-	*/
 
-	.contact-form-content .get-started-wrap h2 {
-		font-size: 36px;
-		padding-bottom: 21px;
-		margin-bottom: 32px;
-	}
-
-	.contact-form-content .get-started-wrap h2::before {
-		width: calc(100% - 40px);
-	}
-
-	.contact-form-content .get-started-wrap p {
-		font-size: 16px;
-		line-height: 20px;
-		margin-bottom: 147.75px;
-	}
 
 	.contact-form-wrap .contact-form-content .success-img {
 		width: 340px;
@@ -1308,15 +1105,7 @@ header .navbar-collapse .menu-wrap {
     	max-width: 185.44px;
 	}
 
-	.contact-form-content .get-started-wrap.success-wrap::after {
-		bottom: 15px;
-	}
-
-	.contact-form-content .get-started-wrap.success-wrap h2 {
-		font-size: 46px;
-		line-height: 1;
-		padding: 0 0 25px;
-	}
+	
 	/*-_-_Contact-form_CSS_End_-_-*/
 
 	/*
@@ -1462,9 +1251,7 @@ header .navbar-collapse .menu-wrap {
 		margin-bottom: 30px;
 	}
 
-	header .navbar-collapse .menu-wrap {
-		padding-bottom: 44px;
-	}
+	
 
 }
 
